@@ -8,7 +8,7 @@ import com.zhouxi.mvpdemo.model.MultipleInterfaceModel;
 /**
  * Multiple implementation class in presenter layer
  *
- * @Auther: ZhouXi
+ * @Author: ZhouXi
  * @since 2020-12-04
  */
 public class MultipleInterfacePresenter extends SingleBasePresenter<MultipleInterfaceContract.View>

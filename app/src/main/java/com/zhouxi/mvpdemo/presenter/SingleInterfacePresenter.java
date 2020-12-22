@@ -7,7 +7,7 @@ import com.zhouxi.mvpdemo.model.SingleInterfaceModel;
 /**
  * Single implementation class in presenter layer
  *
- * @Auther: ZhouXi
+ * @Author: ZhouXi
  * @since 2020-12-04
  */
 public class SingleInterfacePresenter extends SingleBasePresenter<SingleInterfaceContract.View> implements SingleInterfaceContract.Presenter{
@@ -18,8 +18,8 @@ public class SingleInterfacePresenter extends SingleBasePresenter<SingleInterfac
     }
 
     @Override
-    public String viewGetDataFromPresenter(int viewDataIndex) {
-        return singleInterfaceModel.presenterGetDataFromModel(viewDataIndex);
+    public String sendDataFromPresenterToView() {
+        String dataIndex = mView.presenterGetDataFromView();
+        return singleInterfaceModel.sendDataFromModelToPresenter(dataIndex);
     }
 }
-

@@ -11,7 +11,7 @@ import com.zhouxi.mvpdemo.view.IView;
 /**
  * Base activity in view layer
  *
- * @Auther: ZhouXi
+ * @Author: ZhouXi
  * @since 2020-12-04
  */
 public abstract class BaseMVPActivity<T extends IPresenter> extends AppCompatActivity implements IView {

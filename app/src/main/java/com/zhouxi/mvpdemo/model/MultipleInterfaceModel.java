@@ -3,7 +3,7 @@ package com.zhouxi.mvpdemo.model;
 /**
  * Multiple implementation class in model layer
  *
- * @Auther: ZhouXi
+ * @Author: ZhouXi
  * @since 2020-12-04
  */
 public class MultipleInterfaceModel implements IMultipleInterfaceModel {

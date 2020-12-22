@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Base multiple presenter in presenter layer
  *
- * @Auther: ZhouXi
+ * @Author: ZhouXi
  * @since 2020-12-04
  */
 public class MultipleBasePresenter<T extends IView> extends SingleBasePresenter<T> {

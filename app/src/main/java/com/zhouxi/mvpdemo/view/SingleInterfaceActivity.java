@@ -13,7 +13,7 @@ import com.zhouxi.mvpdemo.presenter.SingleInterfacePresenter;
 /**
  * Single implementation class in view layer
  *
- * @Auther: ZhouXi
+ * @Author: ZhouXi
  * @since 2020-12-04
  */
 public class SingleInterfaceActivity extends BaseMVPActivity<SingleInterfacePresenter> implements SingleInterfaceContract.View {
@@ -23,7 +23,7 @@ public class SingleInterfaceActivity extends BaseMVPActivity<SingleInterfacePres
 
     @Override
     protected SingleInterfacePresenter createPresenter() {
-        Log.e("MvpDemo", "createPresenter");
+        Log.d("MvpDemo", "createPresenter");
         return new SingleInterfacePresenter();
     }
 
@@ -36,13 +36,13 @@ public class SingleInterfaceActivity extends BaseMVPActivity<SingleInterfacePres
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mPresenter.viewGetDataFromPresenter(1);
+                textView.setText(mPresenter.sendDataFromPresenterToView());
             }
         });
     }
 
     @Override
     public String presenterGetDataFromView() {
-        return "this is information from view.";
+        return "book";
     }
 }

@@ -8,7 +8,7 @@ import com.zhouxi.mvpdemo.view.IView;
 /**
  * Base single presenter in presenter layer
  *
- * @Auther: ZhouXi
+ * @Author: ZhouXi
  * @since 2020-12-04
  */
 public abstract class SingleBasePresenter<T extends IView> implements IPresenter<T> {
@@ -16,9 +16,9 @@ public abstract class SingleBasePresenter<T extends IView> implements IPresenter
 
     @Override
     public void attachView(T view) {
-        Log.e("MvpDemo", "attachView");
+        Log.d("MvpDemo", "attachView");
         if (view == null) {
-            Log.e("MvpDemo", "mView is null");
+            Log.d("MvpDemo", "mView is null");
         }
         mView = view;
     }

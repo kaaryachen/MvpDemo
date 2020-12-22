@@ -5,7 +5,7 @@ import com.zhouxi.mvpdemo.view.IView;
 /**
  * Multiple interface contract
  *
- * @Auther: ZhouXi
+ * @Author: ZhouXi
  * @since 2020-12-04
  */
 public interface MultipleInterfaceContract {

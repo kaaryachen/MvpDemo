@@ -5,7 +5,7 @@ import com.zhouxi.mvpdemo.view.IView;
 /**
  * Top layer presenter interface
  *
- * @Auther: ZhouXi
+ * @Author: ZhouXi
  * @since 2020-12-04
  */
 public interface IPresenter<T extends IView> {

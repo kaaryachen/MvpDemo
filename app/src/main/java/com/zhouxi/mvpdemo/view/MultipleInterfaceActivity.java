@@ -15,7 +15,7 @@ import com.zhouxi.mvpdemo.presenter.SingleInterfacePresenter;
 /**
  * Multiple implementation class in view layer
  *
- * @Auther: ZhouXi
+ * @Author: ZhouXi
  * @since 2020-12-04
  */
 public class MultipleInterfaceActivity extends BaseMVPActivity<MultipleBasePresenter>
@@ -39,7 +39,7 @@ public class MultipleInterfaceActivity extends BaseMVPActivity<MultipleBasePrese
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                singleInterfacePresenter.viewGetDataFromPresenter(0);
+                singleInterfacePresenter.sendDataFromPresenterToView();
             }
         });
 
@@ -69,7 +69,7 @@ public class MultipleInterfaceActivity extends BaseMVPActivity<MultipleBasePrese
 
     @Override
     public String presenterGetDataFromView() {
-        return "this is information from view.";
+        return "book";
     }
 }
 

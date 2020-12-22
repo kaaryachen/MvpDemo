@@ -5,7 +5,7 @@ import com.zhouxi.mvpdemo.view.IView;
 /**
  * Single interface contract
  *
- * @Auther: ZhouXi
+ * @Author: ZhouXi
  * @since 2020-12-04
  */
 public interface SingleInterfaceContract {
@@ -14,6 +14,6 @@ public interface SingleInterfaceContract {
     }
 
     interface Presenter {
-        String viewGetDataFromPresenter(int viewDataIndex);
+        String sendDataFromPresenterToView();
     }
 }
